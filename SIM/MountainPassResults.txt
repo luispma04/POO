@@ -1,0 +1,201 @@
+14 14 1 1 14 14 3 32 700 50 450 3 60 5 1
+special cost zones:
+5 6 8 8 10
+10 4 12 7 12
+3 10 7 12 8
+obstacles:
+3 3
+4 3
+5 3
+3 4
+5 4
+7 2
+8 2
+9 2
+7 5
+8 5
+9 5
+11 3
+12 3
+13 3
+11 6
+12 6
+2 7
+3 7
+4 7
+6 9
+7 9
+8 9
+10 10
+11 10
+12 10
+5 11
+6 11
+9 12
+10 12
+11 12
+2 13
+3 13
+
+
+Observation number: 0
+Present time: 0.0
+Number of realized events: 0
+Population size: 50
+Final point has been hit: no
+Path of the best fit individual: [(1, 1)]
+Comfort: 0.0
+
+Observation number: 1
+Present time: 70.01385418399566
+Number of realized events: 3894
+Population size: 348
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3)]
+Comfort: 0.03800317253679938
+
+Observation number: 2
+Present time: 105.00908398078244
+Number of realized events: 7086
+Population size: 286
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (7, 4), (8, 4), (9, 4), (10, 4)]
+Comfort: 0.1323224096225889
+
+Observation number: 3
+Present time: 140.0009301712021
+Number of realized events: 12604
+Population size: 50
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7)]
+Comfort: 0.23068531050477165
+
+Observation number: 4
+Present time: 175.0036534166262
+Number of realized events: 19793
+Population size: 342
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (9, 8), (9, 9), (9, 10)]
+Comfort: 0.3177669592859398
+
+Observation number: 5
+Present time: 210.002032361208
+Number of realized events: 29377
+Population size: 143
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8)]
+Comfort: 0.3629704660094482
+
+Observation number: 6
+Present time: 245.00235628852968
+Number of realized events: 40116
+Population size: 252
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9)]
+Comfort: 0.48556988753635305
+
+Observation number: 7
+Present time: 280.00207754645317
+Number of realized events: 53287
+Population size: 147
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9), (14, 9), (14, 10)]
+Comfort: 0.6250958275195675
+
+Observation number: 8
+Present time: 315.00036485612094
+Number of realized events: 91551
+Population size: 447
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (11, 9), (12, 9), (13, 9), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 9
+Present time: 350.00038940261976
+Number of realized events: 144062
+Population size: 445
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 10
+Present time: 385.00022186692934
+Number of realized events: 197746
+Population size: 440
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 11
+Present time: 420.0000869602453
+Number of realized events: 251724
+Population size: 449
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (11, 9), (12, 9), (13, 9), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 12
+Present time: 455.0003529763972
+Number of realized events: 306427
+Population size: 438
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (11, 9), (12, 9), (13, 9), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 13
+Present time: 490.0014738239511
+Number of realized events: 361710
+Population size: 449
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 14
+Present time: 525.0000003668373
+Number of realized events: 418532
+Population size: 444
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (11, 9), (12, 9), (13, 9), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 15
+Present time: 560.000989611249
+Number of realized events: 475541
+Population size: 446
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (11, 9), (12, 9), (13, 9), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 16
+Present time: 595.0006492548522
+Number of realized events: 533625
+Population size: 446
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 17
+Present time: 630.0001795767678
+Number of realized events: 593005
+Population size: 446
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (11, 9), (12, 9), (13, 9), (13, 10), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 18
+Present time: 665.0004840679015
+Number of realized events: 652104
+Population size: 447
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Observation number: 19
+Present time: 700.0
+Number of realized events: 712242
+Population size: 444
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)]
+Cost: 26
+
+Best fit individual: [(1, 1), (2, 1), (3, 1), (3, 2), (4, 2), (5, 2), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (10, 8), (11, 8), (12, 8), (12, 9), (13, 9), (14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (14, 14)] with cost 26

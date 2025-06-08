@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../custom-javadoc.css" title="Style">
+</head>
+<body>
+<main role="main">
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span><a id="line.1">import io.InputParser;</a>
+<span class="sourceLineNo">002</span><a id="line.2">import io.OutputGenerator;</a>
+<span class="sourceLineNo">003</span><a id="line.3">import model.Grid;</a>
+<span class="sourceLineNo">004</span><a id="line.4">import model.Individual;</a>
+<span class="sourceLineNo">005</span><a id="line.5">import simulation.PEC;</a>
+<span class="sourceLineNo">006</span><a id="line.6">import simulation.Simulator;</a>
+<span class="sourceLineNo">007</span><a id="line.7"></a>
+<span class="sourceLineNo">008</span><a id="line.8">import java.io.IOException;</a>
+<span class="sourceLineNo">009</span><a id="line.9">import java.util.Map;</a>
+<span class="sourceLineNo">010</span><a id="line.10"></a>
+<span class="sourceLineNo">011</span><a id="line.11">/**</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * The main class for the Pathfinder simulation.</a>
+<span class="sourceLineNo">013</span><a id="line.13"> * Handles command line arguments and initializes the simulation.</a>
+<span class="sourceLineNo">014</span><a id="line.14"> */</a>
+<span class="sourceLineNo">015</span><a id="line.15">public class Main {</a>
+<span class="sourceLineNo">016</span><a id="line.16">    /**</a>
+<span class="sourceLineNo">017</span><a id="line.17">     * The entry point for the application.</a>
+<span class="sourceLineNo">018</span><a id="line.18">     * Parses command-line arguments and runs the simulation.</a>
+<span class="sourceLineNo">019</span><a id="line.19">     *</a>
+<span class="sourceLineNo">020</span><a id="line.20">     * @param args Command line arguments (-r or -f followed by parameters)</a>
+<span class="sourceLineNo">021</span><a id="line.21">     */</a>
+<span class="sourceLineNo">022</span><a id="line.22">    public static void main(String[] args) {</a>
+<span class="sourceLineNo">023</span><a id="line.23">        try {</a>
+<span class="sourceLineNo">024</span><a id="line.24">            if (args.length &lt; 2) {</a>
+<span class="sourceLineNo">025</span><a id="line.25">                System.err.println("Error: Insufficient arguments.");</a>
+<span class="sourceLineNo">026</span><a id="line.26">                System.err.println("Usage: java -jar project.jar -r n m xi yi xf yf nscz nobs τ ν νmax k μ δ ρ [--visualize]");</a>
+<span class="sourceLineNo">027</span><a id="line.27">                System.err.println("   or: java -jar project.jar -f &lt;infile&gt; [--visualize]");</a>
+<span class="sourceLineNo">028</span><a id="line.28">                System.exit(1);</a>
+<span class="sourceLineNo">029</span><a id="line.29">            }</a>
+<span class="sourceLineNo">030</span><a id="line.30"></a>
+<span class="sourceLineNo">031</span><a id="line.31">            String option = args[0];</a>
+<span class="sourceLineNo">032</span><a id="line.32">            Map&lt;String, Object&gt; parameters;</a>
+<span class="sourceLineNo">033</span><a id="line.33"></a>
+<span class="sourceLineNo">034</span><a id="line.34">            // Check for visualization flag</a>
+<span class="sourceLineNo">035</span><a id="line.35">            boolean visualizationEnabled = false;</a>
+<span class="sourceLineNo">036</span><a id="line.36">            for (String arg : args) {</a>
+<span class="sourceLineNo">037</span><a id="line.37">                if ("--visualize".equals(arg)) {</a>
+<span class="sourceLineNo">038</span><a id="line.38">                    visualizationEnabled = true;</a>
+<span class="sourceLineNo">039</span><a id="line.39">                    break;</a>
+<span class="sourceLineNo">040</span><a id="line.40">                }</a>
+<span class="sourceLineNo">041</span><a id="line.41">            }</a>
+<span class="sourceLineNo">042</span><a id="line.42"></a>
+<span class="sourceLineNo">043</span><a id="line.43">            // Set visualization flag</a>
+<span class="sourceLineNo">044</span><a id="line.44">            OutputGenerator.setPathVisualizationEnabled(visualizationEnabled);</a>
+<span class="sourceLineNo">045</span><a id="line.45"></a>
+<span class="sourceLineNo">046</span><a id="line.46">            if ("-r".equals(option)) {</a>
+<span class="sourceLineNo">047</span><a id="line.47">                // Random generation mode</a>
+<span class="sourceLineNo">048</span><a id="line.48">                parameters = InputParser.parseRandomParameters(args);</a>
+<span class="sourceLineNo">049</span><a id="line.49">            } else if ("-f".equals(option)) {</a>
+<span class="sourceLineNo">050</span><a id="line.50">                // File input mode</a>
+<span class="sourceLineNo">051</span><a id="line.51">                String filePath = args[1];</a>
+<span class="sourceLineNo">052</span><a id="line.52">                parameters = InputParser.parseFile(filePath);</a>
+<span class="sourceLineNo">053</span><a id="line.53">            } else {</a>
+<span class="sourceLineNo">054</span><a id="line.54">                System.err.println("Error: Invalid option. Use -r or -f.");</a>
+<span class="sourceLineNo">055</span><a id="line.55">                System.exit(1);</a>
+<span class="sourceLineNo">056</span><a id="line.56">                return;</a>
+<span class="sourceLineNo">057</span><a id="line.57">            }</a>
+<span class="sourceLineNo">058</span><a id="line.58"></a>
+<span class="sourceLineNo">059</span><a id="line.59">            // Print input parameters</a>
+<span class="sourceLineNo">060</span><a id="line.60">            OutputGenerator.printInputParameters(parameters);</a>
+<span class="sourceLineNo">061</span><a id="line.61"></a>
+<span class="sourceLineNo">062</span><a id="line.62">            // Create grid</a>
+<span class="sourceLineNo">063</span><a id="line.63">            Grid grid = (Grid) parameters.get("grid");</a>
+<span class="sourceLineNo">064</span><a id="line.64"></a>
+<span class="sourceLineNo">065</span><a id="line.65">            // Initialize simulator</a>
+<span class="sourceLineNo">066</span><a id="line.66">            Simulator simulator = new Simulator(</a>
+<span class="sourceLineNo">067</span><a id="line.67">                    grid,</a>
+<span class="sourceLineNo">068</span><a id="line.68">                    (int) parameters.get("initialPopulation"),</a>
+<span class="sourceLineNo">069</span><a id="line.69">                    (int) parameters.get("maxPopulation"),</a>
+<span class="sourceLineNo">070</span><a id="line.70">                    (double) parameters.get("comfortSensitivity"),</a>
+<span class="sourceLineNo">071</span><a id="line.71">                    (double) parameters.get("deathMean"),</a>
+<span class="sourceLineNo">072</span><a id="line.72">                    (double) parameters.get("moveMean"),</a>
+<span class="sourceLineNo">073</span><a id="line.73">                    (double) parameters.get("reproductionMean"),</a>
+<span class="sourceLineNo">074</span><a id="line.74">                    (double) parameters.get("simulationTime")</a>
+<span class="sourceLineNo">075</span><a id="line.75">            );</a>
+<span class="sourceLineNo">076</span><a id="line.76"></a>
+<span class="sourceLineNo">077</span><a id="line.77">            // Run simulation</a>
+<span class="sourceLineNo">078</span><a id="line.78">            Individual bestIndividual = simulator.simulate();</a>
+<span class="sourceLineNo">079</span><a id="line.79"></a>
+<span class="sourceLineNo">080</span><a id="line.80">            // Print final result</a>
+<span class="sourceLineNo">081</span><a id="line.81">            OutputGenerator.printFinalResult(bestIndividual);</a>
+<span class="sourceLineNo">082</span><a id="line.82"></a>
+<span class="sourceLineNo">083</span><a id="line.83">        } catch (IOException e) {</a>
+<span class="sourceLineNo">084</span><a id="line.84">            System.err.println("Error reading input file: " + e.getMessage());</a>
+<span class="sourceLineNo">085</span><a id="line.85">            System.exit(1);</a>
+<span class="sourceLineNo">086</span><a id="line.86">        } catch (Exception e) {</a>
+<span class="sourceLineNo">087</span><a id="line.87">            System.err.println("Error during simulation: " + e.getMessage());</a>
+<span class="sourceLineNo">088</span><a id="line.88">            e.printStackTrace();</a>
+<span class="sourceLineNo">089</span><a id="line.89">            System.exit(1);</a>
+<span class="sourceLineNo">090</span><a id="line.90">        }</a>
+<span class="sourceLineNo">091</span><a id="line.91">    }</a>
+<span class="sourceLineNo">092</span><a id="line.92">}</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</main>
+</body>
+</html>

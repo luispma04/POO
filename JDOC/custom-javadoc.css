@@ -1,0 +1,674 @@
+/* Professional Javadoc Styling */
+
+/* Hide the default navigation completely */
+.skip-nav,
+.flex-box,
+.flex-header,
+.top-nav,
+.sub-nav {
+    display: none !important;
+}
+
+/* Hide the navigation bar */
+.nav-bar {
+    display: none !important;
+}
+
+/* Hide header navigation */
+.header ul.nav-list {
+    display: none !important;
+}
+
+/* Main body styling */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
+
+/* Header styling */
+.header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.4em;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.header h2 {
+    margin: 8px 0 0 0;
+    font-size: 1.3em;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Content area - remove top margin since navigation is hidden */
+.contentContainer {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin: 0 25px 25px 25px;
+    padding: 35px;
+}
+
+/* Adjust body padding since navigation is removed */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 20px 0 0 0;
+    color: #2c3e50;
+}
+
+/* Package and class headers */
+.header h1.title, .contentContainer h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+/* Method and field styling */
+.memberSummary caption {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    color: white;
+    padding: 18px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.15em;
+    font-weight: 500;
+    text-align: left;
+}
+
+.memberSummary th {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 15px;
+    border-bottom: 2px solid #bdc3c7;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.memberSummary td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+    vertical-align: top;
+}
+
+.memberSummary tr:hover td {
+    background: #f8f9fa;
+}
+
+/* Code blocks */
+pre, code {
+    background: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 6px;
+    padding: 18px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    line-height: 1.5;
+    overflow-x: auto;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
+    text-decoration: none !important;
+    border: none;
+}
+
+/* Inline code */
+code {
+    padding: 3px 8px;
+    margin: 0 2px;
+    font-size: 0.85em;
+    text-decoration: none !important;
+}
+
+/* Remove underlines from all code elements */
+pre *, code * {
+    text-decoration: none !important;
+}
+
+/* Ensure no underlines in code blocks */
+.sourceCode, .sourceLineNo {
+    text-decoration: none !important;
+}
+
+/* Fix any potential text-decoration inheritance */
+.block pre, .block code {
+    text-decoration: none !important;
+}
+
+.block pre *, .block code * {
+    text-decoration: none !important;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+/* Inheritance tree */
+.inheritance {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Block lists (parameters, returns, etc.) */
+.blockList {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.blockListLast {
+    border-bottom: none;
+}
+
+/* Tags (since, author, etc.) */
+.block {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #17a2b8;
+}
+
+/* Enhanced search styling */
+.search {
+    background: white;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    padding: 10px 18px;
+    transition: all 0.3s ease;
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+.search:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(52, 152, 219, 0.3);
+    transform: scale(1.02);
+}
+
+/* Style the reset button */
+input[type="reset"] {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+input[type="reset"]:hover {
+    background: #c0392b;
+    transform: translateY(-1px);
+}
+
+/* Navigation lists styling */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    display: block;
+    padding: 12px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-list a:hover {
+    background: #3498db;
+    padding-left: 25px;
+}
+
+/* Footer */
+.footer {
+    background: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contentContainer {
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .memberSummary {
+        font-size: 0.9em;
+    }
+}
+
+/* Remove emoji icons for professional look */
+.packageHierarchyLabel::before,
+.classUseContainer h2::before,
+.methodSummary caption::before,
+.constructorSummary caption::before,
+.fieldSummary caption::before {
+    content: none;
+}
+
+/* Special highlighting for deprecated items */
+.deprecatedLabel {
+    background: #e74c3c;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Enhanced table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ecf0f1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2980b9, #21618c);
+}
+
+/* Header styling */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header h2 {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Navigation styling */
+.topNav, .subNav {
+    background: #34495e;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.topNav a, .subNav a {
+    color: #ecf0f1;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.topNav a:hover, .subNav a:hover {
+    background: #3498db;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Content area */
+.contentContainer {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 25px;
+}
+
+/* Package and class headers */
+.header h1.title, .contentContainer h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Method and field styling */
+.memberSummary caption {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.memberSummary th {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 12px;
+    border-bottom: 2px solid #bdc3c7;
+    font-weight: 600;
+}
+
+.memberSummary td {
+    padding: 12px;
+    border-bottom: 1px solid #ecf0f1;
+    transition: background-color 0.2s ease;
+}
+
+.memberSummary tr:hover td {
+    background: #f8f9fa;
+}
+
+/* Code blocks */
+pre, code {
+    background: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 6px;
+    padding: 15px;
+    font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+    overflow-x: auto;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+    text-decoration: none !important;
+    border: none;
+}
+
+/* Inline code */
+code {
+    padding: 2px 6px;
+    margin: 0 2px;
+    font-size: 0.85em;
+    text-decoration: none !important;
+}
+
+/* Remove underlines from all code elements */
+pre *, code * {
+    text-decoration: none !important;
+}
+
+/* Ensure no underlines in code blocks */
+.sourceCode, .sourceLineNo {
+    text-decoration: none !important;
+}
+
+/* Fix any potential text-decoration inheritance */
+.block pre, .block code {
+    text-decoration: none !important;
+}
+
+.block pre *, .block code * {
+    text-decoration: none !important;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Inheritance tree */
+.inheritance {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Block lists (parameters, returns, etc.) */
+.blockList {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.blockListLast {
+    border-bottom: none;
+}
+
+/* Tags (since, author, etc.) */
+.block {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border-left: 3px solid #17a2b8;
+}
+
+/* Enhanced search styling */
+.search {
+    background: white;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.search:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+    transform: scale(1.02);
+}
+
+/* Style the reset button */
+input[type="reset"] {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+input[type="reset"]:hover {
+    background: #c0392b;
+    transform: translateY(-1px);
+}
+
+/* Navigation lists styling */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    display: block;
+    padding: 12px 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-list a:hover {
+    background: #3498db;
+    padding-left: 20px;
+}
+
+/* Footer */
+.footer {
+    background: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contentContainer {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 1.8em;
+    }
+    
+    .memberSummary {
+        font-size: 0.9em;
+    }
+}
+
+/* Package icons */
+.packageHierarchyLabel::before {
+    content: "📦 ";
+    font-size: 1.2em;
+}
+
+.classUseContainer h2::before {
+    content: "🔧 ";
+    font-size: 1.1em;
+}
+
+/* Method and constructor icons */
+.methodSummary caption::before {
+    content: "⚙️ ";
+    margin-right: 8px;
+}
+
+.constructorSummary caption::before {
+    content: "🏗️ ";
+    margin-right: 8px;
+}
+
+/* Field icons */
+.fieldSummary caption::before {
+    content: "📋 ";
+    margin-right: 8px;
+}
+
+/* Special highlighting for deprecated items */
+.deprecatedLabel {
+    background: #e74c3c;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Enhanced table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Syntax highlighting for different code elements */
+.keyword { color: #e74c3c; font-weight: bold; }
+.string { color: #27ae60; }
+.comment { color: #7f8c8d; font-style: italic; }
+.annotation { color: #f39c12; }
+
+/* Smooth animations */
+* {
+    transition: all 0.2s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ecf0f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2980b9, #21618c);
+}

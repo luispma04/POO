@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../custom-javadoc.css" title="Style">
+</head>
+<body>
+<main role="main">
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span><a id="line.1">package util;</a>
+<span class="sourceLineNo">002</span><a id="line.2"></a>
+<span class="sourceLineNo">003</span><a id="line.3">import model.Grid;</a>
+<span class="sourceLineNo">004</span><a id="line.4">import model.Point;</a>
+<span class="sourceLineNo">005</span><a id="line.5"></a>
+<span class="sourceLineNo">006</span><a id="line.6">import java.util.ArrayList;</a>
+<span class="sourceLineNo">007</span><a id="line.7">import java.util.List;</a>
+<span class="sourceLineNo">008</span><a id="line.8">import java.util.Random;</a>
+<span class="sourceLineNo">009</span><a id="line.9"></a>
+<span class="sourceLineNo">010</span><a id="line.10">/**</a>
+<span class="sourceLineNo">011</span><a id="line.11"> * Utility class for generating random grid elements.</a>
+<span class="sourceLineNo">012</span><a id="line.12"> */</a>
+<span class="sourceLineNo">013</span><a id="line.13">public class RandomGenerator {</a>
+<span class="sourceLineNo">014</span><a id="line.14">    /**</a>
+<span class="sourceLineNo">015</span><a id="line.15">     * Generates random obstacles.</a>
+<span class="sourceLineNo">016</span><a id="line.16">     *</a>
+<span class="sourceLineNo">017</span><a id="line.17">     * @param numObstacles The number of obstacles to generate</a>
+<span class="sourceLineNo">018</span><a id="line.18">     * @param width The grid width</a>
+<span class="sourceLineNo">019</span><a id="line.19">     * @param height The grid height</a>
+<span class="sourceLineNo">020</span><a id="line.20">     * @param initialPoint The initial point</a>
+<span class="sourceLineNo">021</span><a id="line.21">     * @param finalPoint The final point</a>
+<span class="sourceLineNo">022</span><a id="line.22">     * @param random The random number generator</a>
+<span class="sourceLineNo">023</span><a id="line.23">     * @return A list of randomly generated obstacle points</a>
+<span class="sourceLineNo">024</span><a id="line.24">     */</a>
+<span class="sourceLineNo">025</span><a id="line.25">    public static List&lt;Point&gt; generateRandomObstacles(int numObstacles, int width, int height,</a>
+<span class="sourceLineNo">026</span><a id="line.26">                                                      Point initialPoint, Point finalPoint, Random random) {</a>
+<span class="sourceLineNo">027</span><a id="line.27">        List&lt;Point&gt; obstacles = new ArrayList&lt;&gt;();</a>
+<span class="sourceLineNo">028</span><a id="line.28"></a>
+<span class="sourceLineNo">029</span><a id="line.29">        while (obstacles.size() &lt; numObstacles) {</a>
+<span class="sourceLineNo">030</span><a id="line.30">            int x = random.nextInt(width) + 1;</a>
+<span class="sourceLineNo">031</span><a id="line.31">            int y = random.nextInt(height) + 1;</a>
+<span class="sourceLineNo">032</span><a id="line.32">            Point obstacle = new Point(x, y);</a>
+<span class="sourceLineNo">033</span><a id="line.33"></a>
+<span class="sourceLineNo">034</span><a id="line.34">            // Don't place obstacles at the initial or final points</a>
+<span class="sourceLineNo">035</span><a id="line.35">            if (!obstacle.equals(initialPoint) &amp;&amp; !obstacle.equals(finalPoint) &amp;&amp; !obstacles.contains(obstacle)) {</a>
+<span class="sourceLineNo">036</span><a id="line.36">                obstacles.add(obstacle);</a>
+<span class="sourceLineNo">037</span><a id="line.37">            }</a>
+<span class="sourceLineNo">038</span><a id="line.38">        }</a>
+<span class="sourceLineNo">039</span><a id="line.39"></a>
+<span class="sourceLineNo">040</span><a id="line.40">        return obstacles;</a>
+<span class="sourceLineNo">041</span><a id="line.41">    }</a>
+<span class="sourceLineNo">042</span><a id="line.42"></a>
+<span class="sourceLineNo">043</span><a id="line.43">    /**</a>
+<span class="sourceLineNo">044</span><a id="line.44">     * Generates random special cost zones.</a>
+<span class="sourceLineNo">045</span><a id="line.45">     *</a>
+<span class="sourceLineNo">046</span><a id="line.46">     * @param numZones The number of zones to generate</a>
+<span class="sourceLineNo">047</span><a id="line.47">     * @param width The grid width</a>
+<span class="sourceLineNo">048</span><a id="line.48">     * @param height The grid height</a>
+<span class="sourceLineNo">049</span><a id="line.49">     * @param random The random number generator</a>
+<span class="sourceLineNo">050</span><a id="line.50">     * @return A list of randomly generated special cost zones</a>
+<span class="sourceLineNo">051</span><a id="line.51">     */</a>
+<span class="sourceLineNo">052</span><a id="line.52">    public static List&lt;Grid.SpecialCostZone&gt; generateRandomSpecialCostZones(int numZones, int width, int height, Random random) {</a>
+<span class="sourceLineNo">053</span><a id="line.53">        List&lt;Grid.SpecialCostZone&gt; zones = new ArrayList&lt;&gt;();</a>
+<span class="sourceLineNo">054</span><a id="line.54"></a>
+<span class="sourceLineNo">055</span><a id="line.55">        for (int i = 0; i &lt; numZones; i++) {</a>
+<span class="sourceLineNo">056</span><a id="line.56">            // Generate random rectangle coordinates</a>
+<span class="sourceLineNo">057</span><a id="line.57">            int x1 = random.nextInt(width - 1) + 1;</a>
+<span class="sourceLineNo">058</span><a id="line.58">            int y1 = random.nextInt(height - 1) + 1;</a>
+<span class="sourceLineNo">059</span><a id="line.59">            int x2 = random.nextInt(width - x1) + x1 + 1;</a>
+<span class="sourceLineNo">060</span><a id="line.60">            int y2 = random.nextInt(height - y1) + y1 + 1;</a>
+<span class="sourceLineNo">061</span><a id="line.61"></a>
+<span class="sourceLineNo">062</span><a id="line.62">            // Generate random cost (between 2 and 10)</a>
+<span class="sourceLineNo">063</span><a id="line.63">            int cost = random.nextInt(9) + 2;</a>
+<span class="sourceLineNo">064</span><a id="line.64"></a>
+<span class="sourceLineNo">065</span><a id="line.65">            Grid.SpecialCostZone zone = new Grid.SpecialCostZone(new Point(x1, y1), new Point(x2, y2), cost);</a>
+<span class="sourceLineNo">066</span><a id="line.66">            zones.add(zone);</a>
+<span class="sourceLineNo">067</span><a id="line.67">        }</a>
+<span class="sourceLineNo">068</span><a id="line.68"></a>
+<span class="sourceLineNo">069</span><a id="line.69">        return zones;</a>
+<span class="sourceLineNo">070</span><a id="line.70">    }</a>
+<span class="sourceLineNo">071</span><a id="line.71">}</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</main>
+</body>
+</html>

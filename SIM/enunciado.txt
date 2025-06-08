@@ -1,0 +1,8 @@
+5 4 1 1 5 4 1 4 100 10 100 3 10 1 1
+special cost zones:
+2 2 3 3 4
+obstacles:
+2 1
+2 3
+2 4
+4 2

@@ -1,0 +1,227 @@
+22 18 1 1 22 18 6 55 1000 60 800 3 80 6 1
+special cost zones:
+8 6 11 9 15
+15 4 18 7 18
+5 11 9 14 12
+19 10 21 13 20
+3 15 7 17 14
+12 2 16 5 16
+obstacles:
+3 2
+4 2
+5 2
+6 2
+8 2
+9 2
+10 2
+11 2
+13 2
+14 2
+15 2
+16 2
+18 2
+19 2
+20 2
+3 3
+6 3
+8 3
+11 3
+13 3
+16 3
+18 3
+20 3
+2 4
+3 4
+6 4
+8 4
+9 4
+10 4
+11 4
+16 4
+18 4
+20 4
+21 4
+6 5
+11 5
+13 5
+14 5
+15 5
+16 5
+18 5
+2 6
+3 6
+4 6
+6 6
+13 6
+18 6
+20 6
+21 6
+6 7
+8 7
+9 7
+10 7
+13 7
+15 7
+
+
+Observation number: 0
+Present time: 0.0
+Number of realized events: 0
+Population size: 60
+Final point has been hit: no
+Path of the best fit individual: [(1, 1)]
+Comfort: 0.0
+
+Observation number: 1
+Present time: 100.00203211072372
+Number of realized events: 8598
+Population size: 112
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1)]
+Comfort: 0.030896313379497862
+
+Observation number: 2
+Present time: 150.00013512731687
+Number of realized events: 15690
+Population size: 717
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1)]
+Comfort: 0.04770816519194387
+
+Observation number: 3
+Present time: 200.00380227989294
+Number of realized events: 24251
+Population size: 255
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (12, 2), (12, 3), (12, 4)]
+Comfort: 0.048750984671896036
+
+Observation number: 4
+Present time: 250.004779606741
+Number of realized events: 33530
+Population size: 128
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (12, 2), (12, 3), (12, 4), (13, 4)]
+Comfort: 0.05943036229886388
+
+Observation number: 5
+Present time: 300.0024466445411
+Number of realized events: 43660
+Population size: 212
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1)]
+Comfort: 0.09758737235395193
+
+Observation number: 6
+Present time: 350.0015683146972
+Number of realized events: 54942
+Population size: 42
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1)]
+Comfort: 0.11395165765596608
+
+Observation number: 7
+Present time: 400.00174865920366
+Number of realized events: 66906
+Population size: 472
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1)]
+Comfort: 0.17378430164413644
+
+Observation number: 8
+Present time: 450.00915548976604
+Number of realized events: 82478
+Population size: 82
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (22, 2), (22, 3)]
+Comfort: 0.25155489681775167
+
+Observation number: 9
+Present time: 500.0020148628403
+Number of realized events: 103234
+Population size: 347
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6)]
+Comfort: 0.34961403128998586
+
+Observation number: 10
+Present time: 550.0002511432513
+Number of realized events: 130280
+Population size: 320
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10)]
+Comfort: 0.5159821862387238
+
+Observation number: 11
+Present time: 600.0018654460815
+Number of realized events: 168465
+Population size: 681
+Final point has been hit: no
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12)]
+Comfort: 0.616000138858021
+
+Observation number: 12
+Present time: 650.0000086682883
+Number of realized events: 234138
+Population size: 796
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (22, 18)]
+Cost: 38
+
+Observation number: 13
+Present time: 700.0002116551088
+Number of realized events: 367608
+Population size: 798
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (22, 18)]
+Cost: 38
+
+Observation number: 14
+Present time: 750.0005066699155
+Number of realized events: 501692
+Population size: 798
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (22, 18)]
+Cost: 38
+
+Observation number: 15
+Present time: 800.0004561146887
+Number of realized events: 639614
+Population size: 799
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (22, 18)]
+Cost: 38
+
+Observation number: 16
+Present time: 850.0000096635898
+Number of realized events: 779145
+Population size: 795
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (21, 17), (21, 18), (22, 18)]
+Cost: 40
+
+Observation number: 17
+Present time: 900.0001203863902
+Number of realized events: 920779
+Population size: 785
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (21, 17), (21, 18), (22, 18)]
+Cost: 40
+
+Observation number: 18
+Present time: 950.0003112820929
+Number of realized events: 1064447
+Population size: 796
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (22, 18)]
+Cost: 38
+
+Observation number: 19
+Present time: 1000.0
+Number of realized events: 1209751
+Population size: 797
+Final point has been hit: yes
+Path of the best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (22, 18)]
+Cost: 38
+
+Best fit individual: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (21, 2), (21, 3), (22, 3), (22, 4), (22, 5), (22, 6), (22, 7), (22, 8), (22, 9), (22, 10), (22, 11), (22, 12), (22, 13), (22, 14), (22, 15), (22, 16), (22, 17), (22, 18)] with cost 38
